@@ -21,14 +21,14 @@ optional arguments:
                         Examples: 200K, 3M and 1G
 ```
 
-```bash
-# nagios/plugins/check_bandwidth.py -i venet0 -w 25M -c 50M
+```shell
+$ nagios/plugins/check_bandwidth.py -i venet0 -w 25M -c 50M
 BANDWIDTH OK - venet0: DOWN: 11.85 Mbps, UP: 456.23 Kbps
 
-# nagios/plugins/check_bandwidth.py -i venet0 -w 25M -c 50M
+$ nagios/plugins/check_bandwidth.py -i venet0 -w 25M -c 50M
 BANDWIDTH WARNING - venet0: DOWN: 38.50 Mbps, UP: 519.87 Kbps
 
-# nagios/plugins/check_bandwidth.py -i venet0 -w 1M -c 10M
+$ nagios/plugins/check_bandwidth.py -i venet0 -w 1M -c 10M
 BANDWIDTH CRITICAL - venet0: DOWN: 38.57 Mbps, UP: 850.02 Kbps
 ```
 
