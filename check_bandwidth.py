@@ -11,7 +11,7 @@ from os.path import isdir
 import re
 
 __description__ = 'Nagios (NRPE) plugin for checking bandwidth speed limit.'
-__author__ = "Puru Tuladhar <tualdharpuru@gmail.com>"
+__author__ = "Puru Tuladhar <tuladharpuru@gmail.com>"
 __github__ = "https://github.com/tuladhar/check_bandwidth"
 __version__ = "%(prog)s v1.0 by {0} ({1})".format(__author__, __github__)
 
