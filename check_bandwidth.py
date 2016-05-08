@@ -90,19 +90,23 @@ def main():
 
         # convert bandwidth bits back to unit
         down = up = None
-        kbits, mbits = float(10**3), float(10**6)
+        kbits, mbits, gbits = float(10**3), float(10**6), float(10**9)
         if rx_bits < kbits:
                 down = "{0:.2f} bps".format(rx_bits)
         if rx_bits >= kbits:
                 down = "{0:.2f} Kbps".format(rx_bits / kbits)
         if rx_bits >= mbits:
                 down = "{0:.2f} Mbps".format(rx_bits / mbits)
+        if rx_bits >= gbits:
+                down = "{0:.2f} Gbps".format(rx_bits / gbits)
         if tx_bits < kbits:
                 up = "{0:.2f} bps".format(tx_bits)
         if tx_bits >= kbits:
                 up = "{0:.2f} Kbps".format(tx_bits / kbits)
         if tx_bits >= mbits:
                 up = "{0:.2f} Mbps".format(tx_bits / mbits)
+        if tx_bits >= gbits:
+                up = "{0:.2f} Gbps".format(tx_bits / gbits)
 
         # check threshold and exit appropriately
         msg = "{0}: DOWN: {1}, UP: {2}".format(interface, down, up)
