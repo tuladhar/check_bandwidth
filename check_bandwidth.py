@@ -49,19 +49,19 @@ PLUGIN_NAME="BANDWIDTH"
 THRESHOLD_REGEX=re.compile('(\d+)([K|M|G])$')
 
 def exit_ok(msg):
-        print "{0} OK - {1}".format(PLUGIN_NAME, msg)
+        print ("{0} OK - {1}".format(PLUGIN_NAME, msg))
         exit(STATE_OK)
 
 def exit_warning(msg):
-        print "{0} WARNING - {1}".format(PLUGIN_NAME, msg)
+        print ("{0} WARNING - {1}".format(PLUGIN_NAME, msg))
         exit(STATE_WARNING)
 
 def exit_critical(msg):
-        print "{0} CRITICAL - {1}".format(PLUGIN_NAME, msg)
+        print ("{0} CRITICAL - {1}".format(PLUGIN_NAME, msg))
         exit(STATE_CRITICAL)
 
 def exit_unknown(msg):
-        print "{0} UNKNOWN - {1}".format(PLUGIN_NAME, msg)
+        print ("{0} UNKNOWN - {1}".format(PLUGIN_NAME, msg))
         exit(STATE_UNKNOWN)
 
 def get_network_bytes(interface):
