@@ -1,4 +1,30 @@
 # check_bandwidth.py
+
+## Installation
+
+Clone the repository : 
+
+```
+git clone https://github.com/tuladhar/check_bandwidth.git 
+cd check_bandwidth
+```
+
+Use the following command to install check_bandwidth.py
+
+```
+make install
+make install INSTALL_PATH=/usr/lib/nagios/plugins # or specify a path where you want to install the plugin
+```
+
+To remove the plugin use the following command : 
+
+```
+make uninstall
+make uninstall INSTALL_PATH=/usr/lib/nagios/plugins # or specify the path where the plugin is located 
+```
+
+## Usage
+
 Nagios (NRPE) plugin for checking bandwidth speed limit.
 
 ```usage
