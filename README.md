@@ -1,4 +1,4 @@
-# check_bandwidth.py
+# Nagios NRPE plugin: check_bandwidth
 
 ## Installation
 
